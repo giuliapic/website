@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,8 +15,7 @@
     </button>
     <ul class="nav-links">
       <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="progetti.html">Progetti</a></li>
-      <li><a href="consulenza.html">Consulenza</a></li>
+      <li><span class="disabled">Progetti<span class="coming-soon">coming soon</span></span></li>
       <li><a href="cv.html">CV</a></li>
     </ul>
   </nav>
@@ -24,9 +23,22 @@
   <main>
     <div class="container">
       <section class="hero">
-        <div class="vine-decoration"></div>
-        <span class="hero-label">Portfolio &amp; Consulenza</span>
-        <h1>Giulia<br><span class="accent">Picardi</span></h1>
+
+        <div class="vine-decoration">
+          <svg viewBox="0 0 250 500" xmlns="http://www.w3.org/2000/svg">
+            <path d="M200 0 C160 70 230 110 180 180 C130 250 210 290 160 370 C130 410 150 450 140 500" stroke="#8b5cf6" fill="none" stroke-width="1.5" opacity="0.6"/>
+            <path d="M180 180 C145 170 125 190 135 215" stroke="#22c55e" fill="none" stroke-width="1" opacity="0.7"/>
+            <path d="M160 370 C125 360 105 380 115 405" stroke="#22c55e" fill="none" stroke-width="1" opacity="0.7"/>
+            <circle cx="135" cy="215" r="3" fill="#22c55e" opacity="0.4"/>
+            <circle cx="115" cy="405" r="2.5" fill="#22c55e" opacity="0.4"/>
+            <path d="M210 40 C180 80 220 110 195 140" stroke="#8b5cf6" fill="none" stroke-width="0.8" opacity="0.3"/>
+            <path d="M195 140 C170 135 158 150 165 170" stroke="#22c55e" fill="none" stroke-width="0.8" opacity="0.4"/>
+            <circle cx="165" cy="170" r="2" fill="#22c55e" opacity="0.3"/>
+          </svg>
+        </div>
+
+        <h1 class="hero-name">Giulia<br><span class="accent">Picardi</span></h1>
+
         <div class="hero-roles">
           <span class="role-tag">Data Analyst</span>
           <span class="role-tag">Author</span>
@@ -34,18 +46,27 @@
           <span class="role-tag">Communication Consultant</span>
           <span class="role-tag">Project Manager</span>
         </div>
-        <p class="hero-intro">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dove i dati incontrano le parole, e la filosofia incontra la strategia. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
+
+        <div class="hero-divider"></div>
+
+        <div class="hero-bio">
+          <p>I work at the intersection of <strong>social science, technology, and strategic communication</strong>.</p>
+          <p>Currently completing a MSc in Computational Social Science where I apply statistics, machine learning, NLP, network and GIS analysis. My tools of choice are <strong>Python</strong> and <strong>R</strong>.</p>
+          <p>Author of articles exploring the intersection of technology and society through an interdisciplinary lens.</p>
+          <p>My philosophy background enables me to <em>ask the right questions</em>, read data critically, and build meaningful and impactful narratives.</p>
+          <p>On the side, I support companies in brand strategy and communication.</p>
+        </div>
+
       </section>
     </div>
 
     <div class="container">
-      <section class="contact-section">
-        <h2>Parliamone</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <a href="mailto:hello@giuliapicardi.com" class="contact-email">hello@giuliapicardi.com</a>
-      </section>
+      <div class="contact-strip">
+        <div class="contact-inner">
+          <span class="contact-text">Let's talk</span>
+          <a href="mailto:giulia.picardi01@gmail.com" class="contact-email">giulia.picardi01@gmail.com</a>
+        </div>
+      </div>
     </div>
   </main>
 
@@ -54,7 +75,7 @@
       <div class="footer-content">
         <span class="footer-left">&copy; 2026 Giulia Picardi</span>
         <div class="footer-links">
-          <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+          <a href="https://linkedin.com/in/giuliapicardi" target="_blank">LinkedIn</a>
           <a href="https://github.com/giuliapic" target="_blank">GitHub</a>
         </div>
       </div>
