@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Progetti — Giulia Picardi</title>
+  <meta name="description" content="Research projects by Giulia Picardi — Computational Social Science, Network Analysis, Political Participation, Digital Sustainability.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,18 +16,108 @@
     </button>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
-      <li><span class="disabled">Progetti<span class="coming-soon">coming soon</span></span></li>
+      <li><a href="progetti.html" class="active">Progetti</a></li>
       <li><a href="cv.html">CV</a></li>
     </ul>
   </nav>
 
   <main>
     <div class="container">
-      <div class="coming-soon-page">
+
+      <div class="page-header">
+        <span class="section-label">Research &amp; Writing</span>
         <h1>Progetti</h1>
-        <div class="cs-line"></div>
-        <p>Work in progress — coming soon.</p>
+        <p>Selected research papers and published work across computational social science, urban studies, and political sociology.</p>
       </div>
+
+      <!-- PROJECT CARDS -->
+      <div class="projects-list">
+
+        <!-- Project 1: Milan 15-min city -->
+        <article class="project-card">
+          <div class="project-type">
+            <span class="type-tag">Paper</span>
+            <span class="type-tag">Network Analysis</span>
+          </div>
+          <h2 class="project-title">Social infrastructure accessibility and systemic spatial inequality: network evidence from Milan's 15-minute city</h2>
+          <p class="project-meta">Giulia Picardi · 2026 · MSc Research Project, Università degli Studi di Milano</p>
+          <div class="project-abstract">
+            <p>This paper operationalizes the 15-minute city framework by examining pedestrian accessibility to non-commercial social infrastructure across Milan's 89 Neighborhoods of Local Identity (NIL), focusing on care, educational, and cultural amenities. Using bipartite network analysis on OpenStreetMap data, it derives two analytically distinct measures — degree centrality (internal accessibility) and projection strength (urban integration) — revealing that spatial disadvantage in Milan is not domain-specific but a single structural condition. PCA shows a dominant dimension accounting for 71.6% of variance across twelve network measures, and cluster analysis identifies three neighborhood types whose geography reproduces a hierarchical stratification between center and periphery.</p>
+          </div>
+          <div class="project-tags">
+            <span class="p-tag">Spatial Inequality</span>
+            <span class="p-tag">15-Minute City</span>
+            <span class="p-tag">Bipartite Networks</span>
+            <span class="p-tag">PCA</span>
+            <span class="p-tag">GIS</span>
+            <span class="p-tag">R</span>
+            <span class="p-tag">Milan</span>
+          </div>
+          <div class="project-links">
+            <a href="Giulia_Picardi_paper.pdf" class="project-link" target="_blank">
+              <span class="link-icon">↓</span> Read paper (PDF)
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 2: Twin Transition SMEs -->
+        <article class="project-card">
+          <div class="project-type">
+            <span class="type-tag">Paper</span>
+            <span class="type-tag">Multivariate Probit</span>
+          </div>
+          <h2 class="project-title">Digitalisation and Environmental Practices in SMEs: Insights from Eurobarometer 486</h2>
+          <p class="project-meta">Giulia Picardi · 2025 · MSc Research Project, Università degli Studi di Milano</p>
+          <div class="project-abstract">
+            <p>This study explores how digital technologies and organisational characteristics were associated with environmental practices among European SMEs before the Green Deal. Using Flash Eurobarometer 486 (2020) data on 16,365 firms, it estimates a multivariate probit model to jointly analyse five ecological outcomes — eco-innovation, recycling, resource reduction, energy saving, and sustainable product development. Cloud computing and robotics exhibit the most consistent associations across outcomes, while AI and big data show more selective effects. Family ownership and financial capacity appear positively associated with green engagement, whereas skill shortages are linked to reduced adoption of sustainability practices.</p>
+          </div>
+          <div class="project-tags">
+            <span class="p-tag">Twin Transition</span>
+            <span class="p-tag">Digitalisation</span>
+            <span class="p-tag">Sustainability</span>
+            <span class="p-tag">Multivariate Probit</span>
+            <span class="p-tag">Eurobarometer</span>
+            <span class="p-tag">R</span>
+            <span class="p-tag">EU SMEs</span>
+          </div>
+          <div class="project-links">
+            <a href="00_report.html" class="project-link" target="_blank">
+              <span class="link-icon">→</span> Read paper (HTML)
+            </a>
+            <a href="https://github.com/giuliapic/twin_transition_EU_SMEs" class="project-link" target="_blank">
+              <span class="link-icon">⌘</span> GitHub repository
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 3: Population Activism -->
+        <article class="project-card">
+          <div class="project-type">
+            <span class="type-tag">Published Article</span>
+            <span class="type-tag">spsTREND</span>
+          </div>
+          <h2 class="project-title">Population activism in Italian politics: a comparative analysis between 2004 and 2023</h2>
+          <p class="project-meta">Luca Chinello, Giulia Picardi · 2025 · spsTREND, Università degli Studi di Milano</p>
+          <div class="project-abstract">
+            <p>This article analyses Italian citizens' involvement in politics through active forms of civic participation, examining age and gender differences using data from the European Social Survey (rounds 2 and 11). While younger people remain the most active group in demonstrations, the overall rate of activism stays low. Petition signing among minors showed a notable increase in 2023. Contrary to expectations, men are more engaged in public demonstrations than women, while no significant gender differences emerge for petition signing — offering a nuanced picture of how non-institutional political participation evolved over nearly two decades of social and political transformation in Italy.</p>
+          </div>
+          <div class="project-tags">
+            <span class="p-tag">Political Participation</span>
+            <span class="p-tag">ESS</span>
+            <span class="p-tag">Gender</span>
+            <span class="p-tag">Age</span>
+            <span class="p-tag">Chi-squared</span>
+            <span class="p-tag">Italy</span>
+          </div>
+          <div class="project-links">
+            <a href="https://www.spstrend.it/studenti-population-activism/" class="project-link" target="_blank">
+              <span class="link-icon">→</span> Read on spsTREND
+            </a>
+          </div>
+        </article>
+
+      </div>
+
     </div>
   </main>
 
